@@ -9,14 +9,14 @@ function takeANumber(katzDeliLine, name){
 function nowServing(katzDeliLine){
   if (katzDeliLine.length === 0)
     return "There is nobody waiting to be served!"
-  let serving = katzDeliLine(shift)
+  let serving = katzDeliLine.shift()
   return serving
 }
 
 function currentLine(katzDeliLine){
   if (katzDeliLine.length === 0)
     return "The line is currently empty."
-  string = "The line is currently: ";
+  let string = "The line is currently: ";
   for (let i = 0; i < katzDeliLine.length; i++){
     string += i + 1
     string += ". " + katzDeliLine[i] + ", "
